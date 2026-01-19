@@ -1,0 +1,696 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================================
+   Pixel-Style Cursor
+   =================================== */
+* {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="0" y="0" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="4" y="4" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="8" y="8" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="12" y="12" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="16" y="16" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="0" y="4" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="4" y="8" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="8" y="12" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="12" y="16" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="4" y="0" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="8" y="0" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="8" y="4" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/></svg>') 0 0, auto;
+}
+
+html.dark * {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="0" y="0" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="4" y="4" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="8" y="8" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="12" y="12" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="16" y="16" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="0" y="4" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="4" y="8" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="8" y="12" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="12" y="16" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="4" y="0" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="8" y="0" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="8" y="4" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/></svg>') 0 0, auto;
+}
+
+/* Pointer cursor for interactive elements */
+button, a, [role="button"], input[type="button"], input[type="submit"], label {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="0" y="0" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="4" y="4" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="8" y="8" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="12" y="12" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="16" y="16" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="0" y="4" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="4" y="8" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="8" y="12" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="12" y="16" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="4" y="0" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="8" y="0" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/><rect x="8" y="4" width="4" height="4" fill="black" stroke="white" stroke-width="0.5"/></svg>') 0 0, pointer;
+}
+
+html.dark button, html.dark a, html.dark [role="button"], html.dark input[type="button"], html.dark input[type="submit"], html.dark label {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="0" y="0" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="4" y="4" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="8" y="8" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="12" y="12" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="16" y="16" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="0" y="4" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="4" y="8" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="8" y="12" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="12" y="16" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="4" y="0" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="8" y="0" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/><rect x="8" y="4" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/></svg>') 0 0, pointer;
+}
+
+/* ===================================
+   CSS Variables
+   =================================== */
+:root {
+  --line-color: #e5e7eb;
+  --animation-duration-fast: 0.3s;
+  --animation-duration-normal: 0.5s;
+  --animation-duration-slow: 0.8s;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===================================
+   Reduced Motion Support (Accessibility)
+   =================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .animate-on-scroll,
+  .animate-fade-in,
+  .animate-fade-up,
+  .animate-scale-in,
+  .animate-blur-in {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+/* ===================================
+   Base Keyframe Animations
+   =================================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blurIn {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Pulse Ring Animation for 3D Cards */
+@keyframes pulseRing {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Gradient Rotation for Border Effects */
+@keyframes gradientRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Subtle Float Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Twinkle Animation for Stars */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Lamp Glow Animation */
+@keyframes lampGlow {
+  from {
+    opacity: 0.5;
+    width: 15rem;
+  }
+  to {
+    opacity: 1;
+    width: 30rem;
+  }
+}
+
+@keyframes lampGlowSmall {
+  from {
+    opacity: 0.5;
+    width: 8rem;
+  }
+  to {
+    opacity: 1;
+    width: 16rem;
+  }
+}
+
+/* ===================================
+   Scroll-Triggered Animation Classes
+   =================================== */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity var(--animation-duration-normal) var(--ease-out-expo),
+              transform var(--animation-duration-normal) var(--ease-out-expo);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+}
+
+/* Fade Up */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.animate-fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade Down */
+.animate-fade-down {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.animate-fade-down.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scale In */
+.animate-scale-in {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.animate-scale-in.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Blur In */
+.animate-blur-in {
+  opacity: 0;
+  filter: blur(10px);
+}
+.animate-blur-in.is-visible {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* Slide In Left */
+.animate-slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.animate-slide-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide In Right */
+.animate-slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+}
+.animate-slide-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger Children Animation Delays */
+.stagger-children > *:nth-child(1) { transition-delay: 0ms; }
+.stagger-children > *:nth-child(2) { transition-delay: 100ms; }
+.stagger-children > *:nth-child(3) { transition-delay: 200ms; }
+.stagger-children > *:nth-child(4) { transition-delay: 300ms; }
+.stagger-children > *:nth-child(5) { transition-delay: 400ms; }
+.stagger-children > *:nth-child(6) { transition-delay: 500ms; }
+.stagger-children > *:nth-child(7) { transition-delay: 600ms; }
+
+/* ===================================
+   Hover Animation Classes
+   =================================== */
+.hover-scale {
+  transition: transform var(--animation-duration-fast) var(--ease-out-quart);
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+.hover-scale:active {
+  transform: scale(0.98);
+}
+
+.hover-lift {
+  transition: transform var(--animation-duration-fast) var(--ease-out-quart),
+              box-shadow var(--animation-duration-fast) var(--ease-out-quart);
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.15);
+}
+
+.hover-glow {
+  transition: box-shadow var(--animation-duration-fast) ease;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+/* ===================================
+   3D Card Hover Effects (Pure CSS)
+   =================================== */
+.card-3d-container {
+  perspective: 1000px;
+}
+
+.card-3d {
+  transition: transform var(--animation-duration-normal) var(--ease-out-expo);
+  transform-style: preserve-3d;
+}
+
+.card-3d-container:hover .card-3d {
+  transform: rotateX(10deg) rotateY(10deg) scale(1.02);
+}
+
+/* Pin Container Styles */
+.pin-container {
+  perspective: 1000px;
+}
+
+.pin-card {
+  transition: transform 0.7s var(--ease-out-expo);
+  transform-style: preserve-3d;
+}
+
+.pin-container:hover .pin-card {
+  transform: translate(-50%, -50%) rotateX(40deg) scale(0.8);
+}
+
+.pin-perspective {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.pin-container:hover .pin-perspective {
+  opacity: 1;
+}
+
+/* Pulse Rings (CSS-only alternative to Framer Motion infinite) */
+.pulse-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 11.25rem;
+  height: 11.25rem;
+  border-radius: 50%;
+  background: rgba(14, 165, 233, 0.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  animation: pulseRing 6s ease-out infinite;
+}
+.pulse-ring:nth-child(2) { animation-delay: 2s; }
+.pulse-ring:nth-child(3) { animation-delay: 4s; }
+
+/* Pin Line Animation */
+.pin-line {
+  transition: height 0.5s ease;
+}
+.pin-container:hover .pin-line {
+  height: 10rem;
+}
+
+/* ===================================
+   Gradient Border Animation
+   =================================== */
+.gradient-border {
+  position: relative;
+  background: linear-gradient(var(--bg-color, #000), var(--bg-color, #000)) padding-box,
+              linear-gradient(var(--angle, 0deg), #3b82f6, #06b6d4, #3b82f6) border-box;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+}
+
+.gradient-border-animated {
+  animation: gradientRotate 3s linear infinite;
+}
+
+/* Hover Border Gradient (CSS-only) */
+.hover-border-gradient {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(20.7% 50% at 50% 0%, hsl(0, 0%, 100%) 0%, transparent 100%);
+  opacity: 0.5;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  z-index: 0;
+}
+
+.hover-border-gradient:hover::before {
+  background: radial-gradient(75% 180% at 50% 50%, #3275F8 0%, transparent 100%);
+  opacity: 1;
+}
+
+/* ===================================
+   Moving Border (CSS Conic Gradient)
+   =================================== */
+.moving-border-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.75rem;
+}
+
+.moving-border-container::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: conic-gradient(from var(--angle, 0deg), transparent 60%, #0ea5e9 80%, transparent 100%);
+  animation: gradientRotate 2s linear infinite;
+  z-index: -1;
+}
+
+.moving-border-content {
+  position: relative;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgb(30, 41, 59);
+  backdrop-filter: blur(12px);
+  z-index: 1;
+}
+
+/* ===================================
+   Lamp Container (Pure CSS)
+   =================================== */
+.lamp-gradient-left,
+.lamp-gradient-right {
+  transition: width var(--animation-duration-slow) var(--ease-out-expo),
+              opacity var(--animation-duration-slow) var(--ease-out-expo);
+  width: 15rem;
+  opacity: 0.5;
+}
+
+.lamp-container.is-visible .lamp-gradient-left,
+.lamp-container.is-visible .lamp-gradient-right {
+  width: 30rem;
+  opacity: 1;
+}
+
+.lamp-glow {
+  transition: width var(--animation-duration-slow) var(--ease-out-expo);
+  width: 8rem;
+}
+
+.lamp-container.is-visible .lamp-glow {
+  width: 16rem;
+}
+
+.lamp-line {
+  transition: width var(--animation-duration-slow) var(--ease-out-expo);
+  width: 15rem;
+}
+
+.lamp-container.is-visible .lamp-line {
+  width: 30rem;
+}
+
+/* ===================================
+   Container Scroll Animation (CSS)
+   =================================== */
+.scroll-card-container {
+  perspective: 1000px;
+}
+
+.scroll-card {
+  transition: transform var(--animation-duration-normal) var(--ease-out-expo);
+  transform: rotateX(20deg) scale(1.05);
+  transform-origin: center bottom;
+}
+
+.scroll-card-container.is-visible .scroll-card {
+  transform: rotateX(0deg) scale(1);
+}
+
+.scroll-header {
+  transition: transform var(--animation-duration-normal) var(--ease-out-expo);
+  transform: translateY(0);
+}
+
+.scroll-card-container.is-visible .scroll-header {
+  transform: translateY(-100px);
+}
+
+/* ===================================
+   Starfield Background (Pure CSS)
+   =================================== */
+.starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -20;
+  overflow: hidden;
+}
+
+.starfield::before,
+.starfield::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.starfield::before {
+  background-image: 
+    radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 20% 40%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 30% 10%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 40% 60%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1.2px 1.2px at 50% 30%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 60% 80%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 70% 50%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 80% 20%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 90% 70%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 15% 85%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1.2px 1.2px at 25% 55%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 35% 95%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 45% 25%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 55% 65%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 65% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 75% 45%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1.2px 1.2px at 85% 75%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 95% 35%, rgba(255,255,255,0.6) 0%, transparent 100%);
+  animation: twinkle 4s ease-in-out infinite;
+}
+
+.starfield::after {
+  background-image: 
+    radial-gradient(1.2px 1.2px at 5% 15%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 12% 45%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 22% 75%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 32% 25%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1.3px 1.3px at 42% 85%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 52% 55%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1.2px 1.2px at 62% 35%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 72% 95%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 82% 5%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 92% 65%, rgba(255,255,255,0.5) 0%, transparent 100%);
+  animation: twinkle 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* ===================================
+   Card Hover Effect Background
+   =================================== */
+.card-hover-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(229, 231, 235, 0.8);
+  border-radius: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.dark .card-hover-bg {
+  background: rgba(30, 41, 59, 0.8);
+}
+
+.card-hover-item:hover .card-hover-bg {
+  opacity: 1;
+}
+
+/* ===================================
+   Testimonials Carousel (CSS)
+   =================================== */
+.testimonial-image {
+  transition: transform 0.4s var(--ease-out-expo),
+              opacity 0.4s var(--ease-out-expo),
+              z-index 0s;
+}
+
+.testimonial-image.active {
+  transform: scale(1) rotate(0deg) translateY(0);
+  opacity: 1;
+  z-index: 10;
+}
+
+.testimonial-image.inactive {
+  transform: scale(0.95) rotate(var(--rotate, 5deg));
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.testimonial-content {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.testimonial-content.entering {
+  animation: fadeUp 0.3s var(--ease-out-expo) forwards;
+}
+
+/* ===================================
+   Apple Cards Carousel (CSS)
+   =================================== */
+.carousel-card {
+  transition: opacity 0.5s ease, transform 0.5s var(--ease-out-expo);
+}
+
+.carousel-card.entering {
+  animation: fadeUp 0.5s var(--ease-out-expo) forwards;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+}
+
+.modal-content {
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 0.3s var(--ease-out-expo), opacity 0.3s ease;
+}
+
+.modal-content.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* ===================================
+   Timer Hover Effect
+   =================================== */
+.timer-unit {
+  transition: transform var(--animation-duration-fast) var(--ease-out-quart);
+}
+
+.timer-unit:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.timer-unit:nth-child(even):hover {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+/* ===================================
+   Section Divider
+   =================================== */
+.section-divider {
+  animation: fadeUp var(--animation-duration-normal) var(--ease-out-expo) forwards;
+  animation-delay: 0.125s;
+  opacity: 0;
+}
+
+/* ===================================
+   Loading Screen
+   =================================== */
+.loading-screen {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.loading-text {
+  animation: scaleIn 0.5s var(--ease-out-expo) forwards;
+}
+
+/* ===================================
+   Utility Classes
+   =================================== */
+.borderBlack {
+  @apply border border-black/10;
+}
+
+.scroll-mt-28 {
+  scroll-margin-top: 7rem;
+}
+
+.mb-28 {
+  margin-bottom: 7rem;
+}
+
+.sm\:mb-40 {
+  margin-bottom: 10rem;
+}
+
+/* Override default transition for better performance */
+.transition-smooth {
+  transition: all var(--animation-duration-fast) var(--ease-out-quart);
+}
+
+/* GPU Acceleration for animated elements */
+.gpu-accelerated {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
