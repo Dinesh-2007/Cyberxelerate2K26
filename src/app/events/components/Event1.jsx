@@ -3,7 +3,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-const ProjectXplosion = () => {
+const CodingContest = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   return (
@@ -23,10 +23,7 @@ const ProjectXplosion = () => {
             >
               Welcome to{" "}
               <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
-                Project{" "}
-                <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text">
-                  Xplosion
-                </span>
+                Coding Contest
               </span>
             </h1>
             <p
@@ -36,9 +33,7 @@ const ProjectXplosion = () => {
               )}
               style={{ transitionDelay: "200ms" }}
             >
-              Showcase your innovative ideas where creativity meets technology.
-              Present your projects across various domains, compete with the best,
-              and win exciting prizes!
+              The Coding Contest is designed to assess participants' problem-solving abilities, logical thinking, and coding efficiency under time constraints. Think logically. Code efficiently. Compete confidently. 🚀💻
             </p>
           </div>
 
@@ -52,8 +47,8 @@ const ProjectXplosion = () => {
               )}
             >
               <Image
-                src="/project-poster.png"
-                alt="ProjectXplosion Poster"
+                src="/coding-contest-poster.png"
+                alt="Coding Contest Poster"
                 width={400}
                 height={600}
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
@@ -69,60 +64,59 @@ const ProjectXplosion = () => {
               )}
             >
               <h2 className="text-2xl font-bold underline text-gray-800 dark:text-gray-200 mb-4">
-                Guidelines
+                📌 Event Structure
               </h2>
-              <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
-                <li>
-                  <span className="font-semibold">Team Size:</span> 1 to 4 members.
-                </li>
-                <li>
-                  <span className="font-semibold">Submission:</span> Upload your project as a{" "}
-                  <span className="font-bold">PDF</span> via the provided Google Form.
-                </li>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                The contest consists of <span className="font-bold">one round</span> with <span className="font-bold">5 problems:</span>
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                <li><span className="font-semibold">Easy</span> – 2</li>
+                <li><span className="font-semibold">Medium</span> – 2</li>
+                <li><span className="font-semibold">Hard</span> – 1</li>
               </ul>
 
               <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
-                Domains: (but not limited to)
+                🖥 Platform
               </h3>
-              <p className="text-gray-700 dark:text-gray-300">
-                Cyber Security, Blockchain & Web3, AI & ML, Sustainable Development,
-                IoT, Data Science & Big Data
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                The competition will be conducted on <span className="font-bold">HackerRank.</span>
               </p>
 
               <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
-                PDF Requirements:
+                ⏱ Duration & Timing
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                Project Title, Proposed Solution, Methodology, Uniqueness & Innovation,
-                Feasibility & Implementation Plan, Expected Outcomes & Impact
+                <span className="font-semibold">Duration:</span> <span className="font-bold">1½ to 2 hours</span>
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                <span className="font-semibold">Timing:</span> <span className="font-bold">10:30 AM – 12:00 PM</span>
               </p>
 
               <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
-                Rounds & Evaluation:
+                👥 Team Size
               </h3>
-              <p className="text-gray-700 dark:text-gray-300">
-                <span className="font-semibold">Preliminary:</span> Submit your PDF before{" "}
-                <span className="font-bold">12th March 2025</span>. Selections are
-                based on project uniqueness and technology used.
-              </p>
-              <p className="text-gray-700 dark:text-gray-300">
-                <span className="font-semibold">
-                  Final Round (17th March 2025):
-                </span>{" "}
-                Bring a <span className="font-bold">working prototype</span> and your
-                presentation on a <span className="font-bold">pen drive</span> or via email.{" "}
-                <span className="font-bold">Time:</span> 6 mins explanation, 2 mins demo, 2
-                mins Q&A.
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                <span className="font-semibold">Individual participation</span> or <span className="font-semibold">teams of up to 2 members</span> are allowed.
               </p>
 
-              <p className="text-gray-700 dark:text-gray-300 mt-4">
-                <span className="font-semibold">Mode:</span> Offline
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                🏆 Scoring & Results
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                The final <span className="font-bold">HackerRank leaderboard</span> will be considered for result declaration.
+              </p>
+
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                🚫 Rules & Fair Play
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                <span className="font-semibold">Malpractice of any kind</span> is <span className="font-bold">strictly prohibited.</span>
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                <span className="font-semibold">Venue:</span> Mechanical Block, 3rd floor seminar hall
+                Use of <span className="font-bold">AI tools</span> or any <span className="font-bold">unfair means</span> will lead to <span className="text-red-500 font-bold">immediate disqualification.</span>
               </p>
-              <p className="mt-4 font-bold text-red-500">
-                Exciting cash prizes for winners!
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                The decision of the <span className="font-bold">organizers will be final and binding.</span>
               </p>
             </div>
           </div>
@@ -148,4 +142,4 @@ const ProjectXplosion = () => {
   );
 };
 
-export default ProjectXplosion;
+export default CodingContest;

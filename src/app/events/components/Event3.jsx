@@ -23,9 +23,9 @@ const CodeSprintOdyssey = () => {
             >
               Welcome to{" "}
               <span className="bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 text-transparent bg-clip-text">
-                CodeSprint{" "}
+                Vibe{" "}
                 <span className="bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 text-transparent bg-clip-text">
-                  Odyssey
+                  Coding
                 </span>
               </span>
             </h1>
@@ -36,12 +36,7 @@ const CodeSprintOdyssey = () => {
               )}
               style={{ transitionDelay: "200ms" }}
             >
-              Test Your Speed &amp; Teamwork! Experience the thrill of coding in
-              a high-stakes relay. In this fast-paced event, teams of three will
-              take turns at the keyboard—switching every 5 minutes—to tackle
-              coding challenges as quickly as possible. Get ready for the
-              ultimate test of speed, skill, and collaboration—because every
-              second counts!
+              Vibe Coding is a creative coding challenge where collaboration, innovation, and coding flow take center stage. Participants will work together to build solutions in a relaxed yet competitive environment.
             </p>
           </div>
 
@@ -56,7 +51,7 @@ const CodeSprintOdyssey = () => {
             >
               <Image
                 src="/codesprint-poster.jpg"
-                alt="CodeSprint Odyssey Poster"
+                alt="Vibe Coding Poster"
                 width={400}
                 height={600}
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
@@ -72,46 +67,45 @@ const CodeSprintOdyssey = () => {
               )}
             >
               <h2 className="text-2xl font-bold underline text-gray-800 dark:text-gray-200 mb-4">
-                Rules &amp; Guidelines
+                📌 Event Structure
               </h2>
-              <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
-                <li>
-                  <span className="font-semibold">Team Size:</span> Compulsory 3
-                  members per team.
-                </li>
-                <li>
-                  <span className="font-semibold">Duration:</span> 1 hour 30
-                  minutes (approx).
-                </li>
-                <li>
-                  <span className="font-semibold">Timing:</span> 10:30 AM –
-                  12:00 PM (approx).
-                </li>
-                <li>
-                  <span className="font-semibold">No Backseat Coding:</span>{" "}
-                  Teams discussing code with an external party will be
-                  disqualified.
-                </li>
-                <li>
-                  <span className="font-semibold">Punctuality:</span> Arrive at
-                  the venue on time.
-                </li>
-                <li>
-                  <span className="font-semibold">Platform:</span> Hackerrank.
-                </li>
-                <li>
-                  <span className="font-semibold">Mode:</span> Offline (
-                  <span className="font-bold">Venue:</span> To be decided).
-                </li>
-                <li>
-                  <span className="font-semibold">Round:</span> Single round to
-                  decide the top 3 teams based on leaderboard position.
-                </li>
-                <li className="text-red-500 dark:text-red-400 pt-8">
-                  <span className="font-semibold">Prizes:</span> Exciting cash
-                  prizes for winners and participation certificates for all.
-                </li>
+              <div className="space-y-3 text-gray-700 dark:text-gray-300 mb-6">
+                <p>
+                  <span className="font-semibold">Team Size:</span> <span className="font-bold">2–3 members</span> per team
+                </p>
+                <p>
+                  <span className="font-semibold">Round Format:</span> <span className="font-bold">One round</span> consisting of <span className="font-bold">4 problem statements</span>
+                </p>
+                <p>
+                  <span className="font-semibold">Duration:</span> <span className="font-bold">3 hours</span> of continuous coding
+                </p>
+              </div>
+
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                🎯 Focus Areas
+              </h3>
+              <ul className="list-none space-y-2 text-gray-700 dark:text-gray-300 mb-6 ml-4">
+                <li>• Creativity and originality</li>
+                <li>• Logical thinking and implementation</li>
+                <li>• Team collaboration and coding style</li>
               </ul>
+
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                🏆 Evaluation
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                Solutions will be evaluated based on <span className="font-semibold">functionality, creativity, and overall execution.</span>
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                The <span className="font-bold">judges' decision will be final.</span>
+              </p>
+
+              <p className="mt-6 font-bold text-green-500">
+                Code freely. Create boldly. Stay in the vibe. ✨💻🎶
+              </p>
+              <p className="mt-4 font-bold text-red-500">
+                Exciting cash prizes for winners!
+              </p>
             </div>
           </div>
 

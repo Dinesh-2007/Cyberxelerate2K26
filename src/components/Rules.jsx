@@ -35,7 +35,7 @@ export default function GeneralRules() {
         {/* <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#4a4770]"></div> */}
         {/* Header */}
         <header className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-medium text-gray-900 dark:text-white mb-4 drop-shadow-lg">
+          <h1 className="text-5xl md:text-6xl font-medium text-gray-900 dark:text-white mb-4 drop-shadow-lg font-fullback">
             General Rules
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -45,7 +45,7 @@ export default function GeneralRules() {
 
         {/* Guidelines Card */}
         <div
-          className="backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200 dark:border-gray-700 mb-12 font-serif animate-fade-up is-visible"
+          className="backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl border-[2px] border-black dark:border-black-400 mb-12 font-serif animate-fade-up is-visible"
         >
           <ul className="list-disc pl-6 space-y-2 text-gray-900 dark:text-gray-100 text-lg">
             {guidelines.map((rule, i) => (
@@ -56,11 +56,11 @@ export default function GeneralRules() {
 
         {/* Timeline */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-medium text-gray-800 dark:text-white mb-4">
+          <h2 className="text-4xl font-medium text-gray-800 dark:text-white mb-4 font-fullback">
             Timeline
           </h2>
         </div>
-        <div className="relative pl-8 border-l-2 border-gray-300 dark:border-gray-600 font-serif backdrop-blur-sm ">
+        <div className="relative pl-8 border-l-2 border-yellow-400 dark:border-yellow-300 font-serif backdrop-blur-sm">
           {timeline.map((item, i) => (
             <div key={i} className="mb-8 relative pt-5 ">
               <div className="flex items-center mb-1">

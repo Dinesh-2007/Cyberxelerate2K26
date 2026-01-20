@@ -44,7 +44,7 @@ export default function About() {
           {/* Main Heading */}
           <h1
             className={cn(
-              "text-3xl sm:text-4xl md:text-6xl tracking-tight text-gray-800 dark:text-gray-100 font-medium",
+              "text-3xl sm:text-4xl md:text-6xl tracking-tight text-gray-800 dark:text-gray-100 font-medium font-fullback",
               "animate-fade-up",
               isVisible && "is-visible"
             )}

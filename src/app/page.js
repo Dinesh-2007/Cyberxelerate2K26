@@ -24,6 +24,7 @@ const greetings = [
 ];
 
 export default function Home() {
+  const [showIntro, setShowIntro] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [currentGreeting, setCurrentGreeting] = useState(0);
   const [showContent, setShowContent] = useState(true);

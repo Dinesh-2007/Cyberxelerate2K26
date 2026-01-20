@@ -18,7 +18,7 @@ export function ContainerScrollAnimation() {
     <>
       {/* Text Content */}
       <div className="flex flex-col items-center min-h-16 mb-12">
-        <h1 className="text-4xl md:text-6xl text-gray-700 dark:text-gray-50 leading-tight font-medium font-mono">
+        <h1 className="text-4xl md:text-6xl text-gray-700 dark:text-gray-50 leading-tight font-medium font-mono" style={{ WebkitTextStroke: '2px currentColor', paintOrder: 'stroke fill' }}>
           {displayedText}
           <span className={`${isComplete ? "animate-pulse" : ""}`}>|</span>
         </h1>

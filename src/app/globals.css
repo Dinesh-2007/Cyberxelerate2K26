@@ -63,6 +63,13 @@ html.dark {
 }
 
 /* ===================================
+   Fullback Force Font Class
+   =================================== */
+.font-fullback {
+  font-family: "FullbackForce";
+}
+
+/* ===================================
    Base Keyframe Animations
    =================================== */
 @keyframes fadeIn {

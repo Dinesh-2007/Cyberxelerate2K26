@@ -71,52 +71,74 @@ const Event2 = () => {
               )}
             >
               <h2 className="text-2xl font-bold underline text-gray-800 dark:text-gray-200 mb-4">
-                Rules and Guidelines
+                🖥 Event Format
               </h2>
-              <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
-                <li>
-                  <span className="font-semibold">1.</span> Team Size: Maximum
-                  of 3 members per team.
-                </li>
-                <li>
-                  <span className="font-semibold">2.</span> Duration: 1 hour 45
-                  minutes (approx).
-                </li>
-                <li>
-                  <span className="font-semibold">3.</span> No Flag Sharing: Any
-                  team found sharing flags will be immediately disqualified.
-                </li>
-                <li>
-                  <span className="font-semibold">4.</span> Challenge
-                  Categories:
-                  <ul className="pl-5 list-disc">
-                    <li>Cryptography</li>
-                    <li>Forensics</li>
-                    <li>Reverse Engineering</li>
-                    <li>Steganography</li>
-                    <li>OSINT (Open-Source Intelligence)</li>
-                    <li>Web Exploitation</li>
-                    <li>Binary Exploitation</li>
-                  </ul>
-                </li>
-                <li>
-                  <span className="font-semibold">5.</span> Bring your own
-                  laptops/devices.
-                </li>
-                <li>
-                  <span className="font-semibold">6.</span> Platform: CTFd.
-                </li>
-                <li>
-                  <span className="font-semibold">7.</span> Flag Format:{" "}
-                  <code>hackoff&#123;flag&#125;</code>
-                </li>
-                <li>
-                  <span className="font-semibold">8.</span> Style: Jeopardy.
-                </li>
-                <li>
-                  <span className="font-semibold">9.</span> Mode: Offline.
-                </li>
-              </ul>
+              <p className="text-gray-700 dark:text-gray-300 mb-3">
+                The competition consists of a <span className="font-semibold">single round</span> featuring a variety of <span className="font-bold">CTF challenges</span> across different difficulty levels.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                Challenges may include domains such as <span className="font-semibold">web security, cryptography, forensics, reverse engineering,</span> and <span className="font-semibold">basic exploitation.</span>
+              </p>
+
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                🛠 Platform
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                The event will be conducted on the <span className="font-bold">CTFd platform.</span>
+              </p>
+
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                ⏱ Duration & Timing
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                <span className="font-semibold">Timing:</span> <span className="font-bold">10:00 AM – 12:30 PM</span>
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                Teams must submit flags within the allotted time to earn points.
+              </p>
+
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                👥 Team Structure
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                Each team must consist of <span className="font-bold">exactly 3 members.</span>
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                Cross-team collaboration is <span className="font-bold">not allowed.</span>
+              </p>
+
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                🏆 Scoring & Results
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                Points are awarded for each <span className="font-semibold">correctly submitted flag.</span>
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                The <span className="font-bold">CTFd leaderboard</span> at the end of the event will be considered final for declaring winners.
+              </p>
+
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                🚫 Rules & Fair Play
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                <span className="font-semibold">Flag sharing, collaboration</span> between teams, or any form of <span className="font-bold">malpractice</span> is strictly prohibited.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300">
+                Use of <span className="font-bold">unauthorized tools, scripts,</span> or <span className="font-bold">unfair practices</span> will result in <span className="text-red-500 font-bold">immediate disqualification.</span>
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                The decision of the organizers and judges will be <span className="font-bold">final and binding.</span>
+              </p>
+
+              <h3 className="text-xl font-bold mt-6 text-gray-800 dark:text-gray-200">
+                🎯 Objective
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300">
+                Demonstrate your cybersecurity skills, teamwork, and strategic thinking by solving challenges efficiently and ethically.
+              </p>
+              <p className="mt-4 font-bold text-purple-500">
+                Think like a hacker. Act like a professional. Capture the flag. 🚩🔐
+              </p>
             </div>
           </div>
 

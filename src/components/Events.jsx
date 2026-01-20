@@ -11,9 +11,9 @@ const technicalEvents = [
   {
     id: "1",
     route: "/events/projectxplosion",
-    title: "ProjectXplosion",
+    title: "Coding",
     description:
-      "Showcase your innovative ideas where creativity meets technology. Present your projects across various domains, compete with the best, and win exciting cash prizes!",
+      "Showcase your coding skills where logic meets creativity. Solve exciting challenges, compete with the best minds, and prove your talent to win exciting prizes!",
     imageSrc: "/temp3.png",
     gradient: "bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500",
   },
@@ -22,25 +22,25 @@ const technicalEvents = [
     route: "/events/hackoff-ctf",
     title: "HACKOFF CTF",
     description:
-      "Engage in thrilling cyber challenges at Capture The Flag (CTF) event! Test your hacking skills, solve puzzles, and decode hidden messages to capture the hidden flag.",
+      "Step into the world of cybersecurity and prove your skills by cracking challenges, hunting hidden flags, and thinking like a hacker. Compete with top minds and win exciting prizes!",
     imageSrc: "/temp2.png",
     gradient: "bg-gradient-to-br from-green-500 via-teal-500 to-cyan-500",
   },
   {
     id: "3",
     route: "/events/code-sprint-odyssey",
-    title: "CodeSprint Odyssey",
+    title: "Vibe Coding",
     description:
-      "In this fast-paced event, teams of three will take turns at the keyboard—switching every 5 minutes—to tackle coding challenges.",
+      "Code to the rhythm where creativity meets logic. Build, break, and innovate in a chill yet competitive vibe coding session—express your style, test your skills, and stand out while coding your way to victory!",
     imageSrc: "/temp5.png",
     gradient: "bg-gradient-to-br from-red-500 via-pink-500 to-purple-500",
   },
   {
     id: "4",
     route: "/events/tech-meme-a-thon",
-    title: "Tech Meme-A-Thon",
+    title: "Paper Presentation",
     description:
-      "Welcome to Tech Memeathon, where humor meets technology! Ever laughed at a tech meme and thought, 'I could do better'? Now's your chance!",
+      "Present your ideas where knowledge meets innovation. Share your research, explore emerging technologies, and showcase your insights before an expert audience while competing for exciting prizes!",
     imageSrc: "/temp1.png",
     gradient: "bg-gradient-to-br from-yellow-500 via-orange-500 to-red-500",
   },
@@ -87,6 +87,30 @@ export default function Events() {
 
   return (
     <section id="events" className="relative h-full w-full py-20 md:py-24">
+      {/* Left Side Decorative Character */}
+      <div className="fixed left-0 top-40 w-80 h-screen z-10 hidden lg:flex items-center justify-center">
+        <Image
+          src="/28430-removebg-preview.png"
+          alt="Soccer Player Character"
+          width={320}
+          height={500}
+          className="object-contain"
+          priority
+        />
+      </div>
+
+      {/* Right Side Decorative Character */}
+      <div className="fixed right-0 top-40 w-80 h-screen z-10 hidden lg:flex items-center justify-center">
+        <Image
+          src="/Picsart_26-01-20_07-38-22-430.png"
+          alt="Soccer Player Jersey 10"
+          width={320}
+          height={500}
+          className="object-contain"
+          priority
+        />
+      </div>
+
       <SectionHeading> Events </SectionHeading>
 
       {/* Modal Overlay */}
@@ -97,10 +121,24 @@ export default function Events() {
         >
           {selectedEvent && (
             <div
-              className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-2xl border-[5px] border-gray-300 dark:border-gray-700 max-w-2xl w-full max-h-[80vh] overflow-y-auto transform scale-100 transition-transform duration-300 ease-out"
+              className="bg-white dark:bg-gray-900 rounded-lg shadow-2xl border-[5px] border-gray-300 dark:border-gray-700 max-w-4xl w-full max-h-[80vh] overflow-y-auto transform scale-100 transition-transform duration-300 ease-out flex"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative">
+              {/* Left Side - Image */}
+              <div className="w-1/3 bg-white p-6 flex flex-col items-center justify-center rounded-l-lg">
+                <div className={`w-full h-64 rounded-lg overflow-hidden ${selectedEvent.gradient}`}>
+                  <Image
+                    src={selectedEvent.imageSrc}
+                    alt={`${selectedEvent.title} Banner`}
+                    width={300}
+                    height={300}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+
+              {/* Right Side - Content */}
+              <div className="w-2/3 bg-gray-50 dark:bg-gray-900 relative">
                 <button
                   onClick={closeModal}
                   className="absolute top-4 right-4 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-2xl z-50 bg-white dark:bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center"
@@ -112,16 +150,6 @@ export default function Events() {
                   <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
                     {selectedEvent.title}
                   </h2>
-                  
-                  <div className={`w-full h-64 rounded-lg overflow-hidden mb-6 ${selectedEvent.gradient}`}>
-                    <Image
-                      src={selectedEvent.imageSrc}
-                      alt={`${selectedEvent.title} Banner`}
-                      width={600}
-                      height={300}
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
 
                   <p className="text-gray-700 dark:text-gray-300 text-lg mb-8 leading-relaxed">
                     {selectedEvent.description}

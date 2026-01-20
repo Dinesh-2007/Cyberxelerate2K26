@@ -19,7 +19,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact</SectionHeading>
       <div className="font-serif text-gray-600 dark:text-gray-400 text-md">
-        <HoverEffect items={contacts} className="gap-6" />
+        <HoverEffect items={contacts} className="gap-8" />
       </div>
     </section>
   );
@@ -38,7 +38,12 @@ export const contacts = [
   },
   {
     title: "Student Coordinator",
-    details: [{ name: "Mr. Aswanth Babu", phone: "+91 91509 08828" }],
-    link: "https://www.linkedin.com/in/aswanthbabu2004/",
+    details: [{ name: "Pritto Ruban", phone: "+91 96291 69076" }],
+    link: "https://www.linkedin.com/in/prittoruban/",
+  },
+  {
+    title: "Student Coordinator",
+    details: [{ name: "Porselvi P", phone: "+91 80157 07073" }],
+    link: "https://www.linkedin.com/in/porselvi-p-130a282a0/",
   },
 ];

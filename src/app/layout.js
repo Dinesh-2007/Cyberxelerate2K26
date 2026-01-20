@@ -25,6 +25,10 @@ const metalGothic = localFont({
   src: "../fonts/MetalGothic-DemoVersion-Regular.ttf",
   display: "swap",
 });
+const fullbackForce = localFont({
+  src: "../fonts/FullbackForce-R95Zo.ttf",
+  display: "swap",
+});
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -51,9 +55,9 @@ export default function RootLayout({ children }) {
         className={`${mirageFinal.className} antialiased bg-gradient-to-r from-white via-blue-600 to-red-700 text-gray-950 dark:text-gray-50 dark:text-opacity-90`}
       >
         {/* Background Gradients */}
-        <div className="absolute inset-0 -z-10">
-          <div className="bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#423d3d]" />
-          <div className="bg-[#dbd7fb] absolute top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-transparent" />
+        <div className="fixed inset-0 -z-10" style={{
+          background: "linear-gradient(to right, #ffffff 0%, #4169e1 50%, #8b0000 100%)"
+        }}>
         </div>
 
         {/* <div className="fixed top-0 left-0 right-0 z-10 py-10">

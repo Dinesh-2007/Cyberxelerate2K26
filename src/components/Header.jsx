@@ -63,7 +63,7 @@ const Header = () => {
           />
         </Link>
         <div className="hidden xl:flex flex-col">
-          <span className="self-center text-xl font-normal whitespace-nowrap dark:text-white">
+          <span className="self-center text-xl font-normal whitespace-nowrap dark:text-white font-fullback">
             R.M.K College of Engineering and Technology
           </span>
           <span className="self-center text-sm whitespace-nowrap dark:text-gray-300 font-serif">

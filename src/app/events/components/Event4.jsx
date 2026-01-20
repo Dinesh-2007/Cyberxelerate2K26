@@ -3,7 +3,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-const TechMemeAThon = () => {
+const PaperPresentation = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
   return (
     <section ref={ref} className="relative w-full py-20 md:py-40 backdrop-blur-sm">
@@ -22,7 +22,7 @@ const TechMemeAThon = () => {
             >
               Welcome to{" "}
               <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
-                Tech Meme-A-Thon
+                Paper Presentation
               </span>
             </h1>
             <p
@@ -32,12 +32,7 @@ const TechMemeAThon = () => {
               )}
               style={{ transitionDelay: "200ms" }}
             >
-              Welcome to Tech Meme-A-Thon, where humor meets technology! Ever
-              laughed at a tech meme and thought, "I could do better"? Now's
-              your chance! Participants will be given technical topics on the
-              spot and must create memes that simplify them in a relatable way.
-              Once done, you'll explain your meme and show how it turns a tricky
-              concept into something anyone can grasp.
+              The Paper Presentation event provides a platform for students to present their research ideas, innovative concepts, and technical insights across emerging domains. Present your ideas. Inspire innovation. Lead the future. 🚀📑
             </p>
           </div>
 
@@ -51,8 +46,8 @@ const TechMemeAThon = () => {
               )}
             >
               <Image
-                src="/memeathon-poster.png"
-                alt="Tech Meme-A-Thon Poster"
+                src="/paper-presentation-poster.png"
+                alt="Paper Presentation Poster"
                 width={400}
                 height={500}
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md object-cover rounded-2xl shadow-lg dark:shadow-black/50"
@@ -67,54 +62,41 @@ const TechMemeAThon = () => {
               )}
             >
               <h2 className="text-2xl font-bold underline text-gray-800 dark:text-gray-200 mb-4">
-                Rules &amp; Guidelines
+                Event Guidelines
               </h2>
               <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
                 <li>
-                  <span className="font-semibold">Participation:</span>{" "}
-                  Individual only - no teams allowed.
+                  <span className="font-semibold">👥 Team Composition:</span> Each team may consist of a maximum of 4 members.
                 </li>
                 <li>
-                  <span className="font-semibold">Content:</span> Memes must be
-                  original and non-offensive.
+                  <span className="font-semibold">📤 Submission Requirements:</span> Every team must submit the following before the specified deadline through the prescribed online submission form:
+                  <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+                    <li>Project Report</li>
+                    <li>PowerPoint Presentation (PPT)</li>
+                  </ul>
                 </li>
                 <li>
-                  <span className="font-semibold">Creation:</span> Create two
-                  memes on different assigned topics.
+                  <span className="font-semibold">🧠 Domains:</span> Participants may choose any one of the following:
+                  <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+                    <li>Cyber Security</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Edutech</li>
+                    <li>Open Innovation</li>
+                  </ul>
                 </li>
                 <li>
-                  <span className="font-semibold">Time Limit:</span> 50 minutes
-                  to complete your memes.
+                  <span className="font-semibold">⏱ Presentation Duration:</span> Each team will be allotted 5–10 minutes to present their project.
                 </li>
                 <li>
-                  <span className="font-semibold">Pitch:</span> 3 minutes to
-                  explain your memes after submission.
+                  <span className="font-semibold">🏆 Evaluation Criteria:</span> Final selection will be based on:
+                  <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+                    <li>Quality of presentation</li>
+                    <li>Level of innovation</li>
+                    <li>Relevance to the selected domain</li>
+                  </ul>
                 </li>
-                <li>
-                  <span className="font-semibold">Dress Code:</span> Formal
-                  attire is mandatory.
-                </li>
-                <li>
-                  <span className="font-semibold">Equipment:</span> Bring your
-                  own laptop.
-                </li>
-                <li>
-                  <span className="font-semibold">Judging:</span> Based on
-                  clarity, originality, creativity, and relevance.
-                </li>
-                <li>
-                  <span className="font-semibold">Tools:</span> Use any meme
-                  creation platform (e.g., Canva, Photoshop).
-                </li>
-                <li>
-                  <span className="font-semibold">Event Timing:</span> 10:00 am
-                  - 12:15 am.
-                </li>
-                <li className="text-red-500 dark:text-red-400 font-semibold pt-8">
-                  <span className="font-semibold">Exiting Cash Prices:</span>{" "}
-                  This unique event challenges you to break down complex tech
-                  concepts into fun, easy-to-understand memes and win exciting
-                  cash prizes!
+                <li className="text-red-500 dark:text-red-400 font-semibold pt-4">
+                  <span className="font-semibold">⚖️ Final Decision:</span> The decision of the judges will be final and binding.
                 </li>
               </ul>
             </div>
@@ -172,4 +154,4 @@ const TechMemeAThon = () => {
   );
 };
 
-export default TechMemeAThon;
+export default PaperPresentation;

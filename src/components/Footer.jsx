@@ -22,7 +22,7 @@ const Footer = () => {
 
       <div className="container mx-auto px-6 flex md:space-x-52 flex-col items-center md:flex-row md:justify-between md:gap-6 z-10 max-w-screen-lg">
         <div className="text-center md:text-left">
-          <h2 className="text-2xl font-medium mb-4 hidden sm:block">
+          <h2 className="text-2xl font-medium mb-4 hidden sm:block font-fullback">
             <a
               href="https://www.rmkcet.ac.in/"
               target="_blank"
@@ -74,7 +74,7 @@ const Footer = () => {
             <SiGmail size={24} />
           </a>
           <a
-            href="https://github.com/PrittoRuban"
+            href="https://github.com/Dinesh-2007/Cyberxelerate2K26"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 dark:text-white hover:text-blue-400 dark:hover:text-blue-300 transition duration-300 transform hover:scale-110"
